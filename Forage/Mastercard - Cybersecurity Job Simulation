@@ -20,16 +20,18 @@ We use the results of the simulated test to help us design and implement future 
 - Powerpoint
 
 ## Steps
-1. Help indentify Phishing emails.
-2. Design a phishing email simulation (Pictures is in thee folder as '[PS1](https://github.com/cf000091/Cybersecurity-portfolio/blob/main/Forage/PS1.png)' and 'PS2')
-3. Create presentation to (Presentation is in the folder as 'Phishing PowerPoint Presentation' 
-3. Task 2: Interpret phishing simulation results (Picture is in the folder as '
-3. Tested WPA/WPA2 using handshake capture
+Task 1: Help indentify Phishing emails.
+Task 2: Design a phishing email simulation (Pictures is in the folder as 'PS1' and 'PS2')
+Task 3: Interpret phishing simulation results (Picture is in the folder as 'PS3')
+Task 4: Create a presentation to (Presentation is in the folder as 'Phishing PowerPoint Presentation' 
+
 
 ## Results
-- WEP network cracked in 2 minutes
-- WPA2 network remained secure
+- Helped identify and report security threats such as phishing 
+- Analyzed and identified which areas of the business needed more robust security training and implemented training courses and procedures for those teams
 
 ## Key Takeaways
-- WEP is outdated and insecure
-- WPA2 is reliable for home and small business networks
+- Practical Experience Designing Simulations
+- Understanding Phishing Tactics
+- Learned to analyze simulation results to identify which users are most at risk.
+- Practical Application for Cybersecurity Roles
