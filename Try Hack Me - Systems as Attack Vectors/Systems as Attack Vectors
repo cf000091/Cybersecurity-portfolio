@@ -1,1 +1,20 @@
+# Try Hack Me - Systems as Vectors  Lab
 
+## Objective
+Imagine yourself as a SOC analyst at TryHackMe. Decide what to do with the Systems at Risk and choose the best measures to protect your systems at the Remediation Plan tabs. 
+
+## Tools
+- VM (Try Hack Me Security Dashboard)
+
+## Steps
+Task 1:Review and analyze potential Systems at Risk. (Pictures is in the folder as 'SAV1', 'SAV2', 'SAV3', and 'SAV4')
+Task 2: Prepare and implement the corporate Remediation Plan. (Picture is in the folder as 'SAV5') 
+
+
+## Results
+- For task 1,  I was given four different cases where I had to choose the best solution to protect my coworkers who were at risk.
+- For task 2, I chose a security awareness program, an antivirus solution, an anti-phishing solution, and an access management policy based on the four cases and what I believed were the best options to keep TryHackMe secure. The security awareness program will educate employees, the antivirus solution will help prevent malicious programs from running on endpoints, and the anti-phishing solution will reduce the number of phishing emails employees receive by detecting and blocking them. The access management policy will also make it more difficult for deepfakes or social engineering attempts to trick IT support.
+
+## Key Takeaways
+- Identified the proper steps for handling security incidents
+- Implemented security policies
