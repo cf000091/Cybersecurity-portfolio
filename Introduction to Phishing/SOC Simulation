@@ -54,7 +54,6 @@ Task 4:
    - Or closed if it was not a real threat
 - Made sure my decision matched the evidence from Splunk logs and the alert detail
 
-
 ## Results
 - Finished all 4 cases in the lab
 - Used Splunk to confirm suspicious activity in logs
@@ -65,3 +64,19 @@ Task 4:
 - Splunk helps confirm what alerts are actually happening behind the scenes
 - Not every alert is malicious — logs help verify
 - Security works best when combining dashboard alerts + log analysis + endpoint tools
+
+## Attempts
+
+1. The primary areas for improvement are investigation efficiency, reducing response time, and producing thorough case documentation.
+                    
+Alert Analysis
+
+Metric	                Result          	 Interpretation
+
+True Positives	             4	            All four phishing alerts were correctly identified as malicious.
+False Positives	          0	            No legitimate activity was incorrectly classified as malicious.
+True Positive Rate	     100%	         Every investigated alert was accurately classified.
+False Positive Rate	      0%	            No benign alerts were mistakenly escalated.
+Closed Alerts	             4	            All alerts were investigated and resolved.
+Mean Time to Resolve	   11 minutes	      Alerts were investigated and resolved efficiently.
+Mean Dwell Time	      35 minutes	      The simulated attacker remained active for approximately 35 minutes before detection and containment.
