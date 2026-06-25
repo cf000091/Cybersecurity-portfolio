@@ -1,0 +1,67 @@
+# SOC Simulator: Introduction to Phishing
+
+## Objective
+- Monitor and analyze real-time alerts.
+- Identify and document critical events such as suspicious emails and attachments.
+- Create detailed case reports based on your observations to help your team understand the full scope of alerts and malicious activity.
+
+## Tools
+- VM (Try Hack Me Security Dashboard)
+- Splunk
+- Virus Total
+- 
+
+## Steps
+Task 1: 
+- Looked at all 4 cases one by one.
+- Read what each alert was about
+- Checked what triggered the alert
+- Focused on anything that looked off like:
+   - weird email addresses
+   -  urgent messages
+   -  unknown attachments
+   -  suspicious links
+
+Task 2: 
+- Opened Splunk and checked logs related to the alerts
+- Searched for events tied to the user/email/IP in each case
+- Looked at patterns like:
+   -  repeated login attempts
+   - unusual access times
+   - strange email activity
+- Used Splunk results to confirm if the alert was actually suspicious or just a false positive
+- Matched what I saw in Splunk with what was shown in the dashboard
+
+Task 3: 
+- Tried to figure out what type of issue each case was (phishing, malware, etc.)
+- Looked at what the user was being asked to do in the email/message
+- Used VirusTotal when needed to check if links/files looked bad
+- Compared the options and picked what made the most sense for each case
+
+Task 4: 
+- Wrote each alert like a short case using the 5 W’s:
+   - Who was involved (user/account affected)
+   - What happened (type of alert or activity)
+   - When it happened (from Splunk timestamps/logs)
+   - Where it happened (email, endpoint, system)
+   - Why it looked suspicious (phishing signs, unusual behavior, etc.)
+- Used Splunk and dashboard info to build out each case
+- After reviewing, I decided if each alert was:
+   - True positive (real malicious/suspicious activity)
+   - False positive (legit activity that just triggered an alert)
+- Based on that, I also decided if it needed to be:
+   - Escalated to higher-level SOC/incident response
+   - Or closed if it was not a real threat
+- Made sure my decision matched the evidence from Splunk logs and the alert detail
+
+
+## Results
+- Finished all 4 cases in the lab
+- Used Splunk to confirm suspicious activity in logs
+- Understood how alerts, logs, and security tools connect
+- Got better at spotting phishing and validating incidents
+
+## Key Takeaways
+- Splunk helps confirm what alerts are actually happening behind the scenes
+- Not every alert is malicious — logs help verify
+- Security works best when combining dashboard alerts + log analysis + endpoint tools
