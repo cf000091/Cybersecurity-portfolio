@@ -68,15 +68,3 @@ Task 4:
 ## Attempts
 
 1. 
-                    
-Alert Analysis
-
-Metric	                Result          	 Interpretation
-
-True Positives	             4	            All four phishing alerts were correctly identified as malicious.
-False Positives	          0	            No legitimate activity was incorrectly classified as malicious.
-True Positive Rate	     100%	         Every investigated alert was accurately classified.
-False Positive Rate	      0%	            No benign alerts were mistakenly escalated.
-Closed Alerts	             4	            All alerts were investigated and resolved.
-Mean Time to Resolve	   11 minutes	      Alerts were investigated and resolved efficiently.
-Mean Dwell Time	      35 minutes	      The simulated attacker remained active for approximately 35 minutes before detection and containment.
