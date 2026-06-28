@@ -11,7 +11,8 @@ Graduate student pursuing a Master of Science in Strategic Cybersecurity and Inf
 
 
 ## Labs & Projects
-- [Cybersecurity Home Lab] 
+- [Cybersecurity Home Lab]
+- Simulation: [Let 'sDefend SOC Environment](
 - Simulation: [Try Hack Me - Introduction to Phishing](https://github.com/cf000091/Cybersecurity-portfolio/tree/f769281586ab60aec9aca23c79c23c24027768d6/Introduction%20to%20Phishing)
 - [Try Hack Me - Humans as Vectors  Lab]( https://github.com/cf000091/Cybersecurity-portfolio/tree/f00ab345c09fd718d85855163f70e7b23b2a1823/Try%20Hack%20Me%20-%20Humans%20as%20Vectors%20Lab)
 - [Try Hack Me - Systems as Vectors  Lab]( https://github.com/cf000091/Cybersecurity-portfolio/tree/cf1cb86f077d00cafca7705b84def3c7fdb66494/Try%20Hack%20Me%20-%20Systems%20as%20Attack%20Vectors)
