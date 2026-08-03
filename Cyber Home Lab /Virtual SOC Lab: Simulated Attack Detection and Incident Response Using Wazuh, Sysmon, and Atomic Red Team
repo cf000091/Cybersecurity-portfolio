@@ -1,0 +1,65 @@
+# Virtual SOC Lab: Simulated Attack Detection and Incident Response Using Wazuh, Sysmon, and Atomic Red Team
+
+## Objective
+  Build a virtual SOC environment to simulate cyberattacks, collect endpoint telemetry, analyze security alerts, and develop hands-on experience with threat detection, incident investigation, and security monitoring tools.
+
+## Goals
+  | Goal                       | Description                                                                                              |
+  | -------------------------- | -------------------------------------------------------------------------------------------------------- |
+  | **Threat Simulation**      | Use Atomic Red Team to generate realistic attacker activity based on MITRE ATT&CK techniques.            |
+  | **Security Monitoring**    | Use Wazuh to collect logs, detect suspicious behavior, and generate alerts.                              |
+  | **Endpoint Visibility**    | Use Sysmon to capture detailed Windows activity for investigations.                                      |
+  | **Incident Investigation** | Analyze alerts and determine what happened, when it occurred, and the potential impact.                  |
+  | **SOC Skill Development**  | Practice workflows used by Tier 1 SOC analysts, including alert triage, log analysis, and documentation. |
+
+
+## Tools
+  1. SOC Environment
+    Ubuntu Server VM
+      - Wazuh Manager + Dashboard (SIEM)
+      - Snort 3 (network IDS)
+      - Zeek (network logs)
+      - tcpdump / Wireshark (packet capture)
+  
+  2. Attacker Environment 
+    Raspberry Pi: Windows 11 VM
+    - Wazuh Agent (Log Collection & Forwarding)
+    - Sysmon (Endpoint Telemetry & Logging)
+    - Atomic Red Team  (Attack Simulation)
+    - PowerShell 7 (Attack Execution Platform)
+
+## What each component does
+    | Environment                           | Tool / Component | Label                                     | Purpose                                                                                     |
+    | ------------------------------------- | ---------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------- |
+    | **SOC Environment (Defender Side)**   | Ubuntu Server    | SOC Server                                | Hosts security monitoring tools and acts as your Security Operations Center.                |
+    | **SOC Environment**                   | Wazuh Manager    | SIEM / Detection Engine                   | Collects logs, analyzes events, applies detection rules, and generates alerts.              |
+    | **SOC Environment**                   | Wazuh Dashboard  | Security Monitoring Interface             | Provides dashboards, alerts, searches, and investigation capabilities.                      |
+    | **SOC Environment**                   | Snort 3          | Network Intrusion Detection System (NIDS) | Detects suspicious network activity, scans, and attack patterns.                            |
+    | **SOC Environment**                   | Zeek             | Network Security Monitoring (NSM)         | Creates detailed network logs for traffic analysis and threat hunting.                      |
+    | **SOC Environment**                   | Wireshark        | Packet Analysis Tool                      | Allows manual inspection of network packets during investigations.                          |
+    |                                       |                  |                                           |                                                                                             |
+    | **Attacker / Simulation Environment** | Windows 11 VM    | Monitored Endpoint                        | The machine where simulated attacks and suspicious activity occur.                          |
+    | **Attacker Environment**              | Atomic Red Team  | Adversary Emulation Tool                  | Simulates real-world attacker techniques based on MITRE ATT&CK.                             |
+    | **Attacker Environment**              | PowerShell       | Command Execution Platform                | Executes commands and scripts used by Atomic Red Team tests.                                |
+    | **Attacker Environment**              | Sysmon           | Endpoint Telemetry / Monitoring           | Records detailed Windows activity such as processes, network connections, and file changes. |
+    | **Attacker Environment**              | Wazuh Agent      | Log Collector / Forwarder                 | Sends Windows and Sysmon logs from the endpoint to the SOC server.                          |
+
+## Data Flow
+  | Step | Component       | Action                                       |
+  | ---- | --------------- | -------------------------------------------- |
+  | 1    | Atomic Red Team | Generates simulated attacker activity        |
+  | 2    | PowerShell      | Executes the test commands                   |
+  | 3    | Sysmon          | Records what happened on the Windows machine |
+  | 4    | Wazuh Agent     | Sends logs to the SOC server                 |
+  | 5    | Wazuh Manager   | Analyzes logs and creates alerts             |
+  | 6    | Wazuh Dashboard | Allows you to investigate the incident       |
+
+
+
+## Steps
+
+
+## Results
+
+
+## Key Takeaways
