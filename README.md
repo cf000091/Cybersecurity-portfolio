@@ -1,5 +1,9 @@
 # Cory Floyd's Cybersecurity Portfolio
 
+## Welcoming Message!
+Welcome, and thank you for taking the time to explore my cybersecurity portfolio. My Cyberfolio is an ongoing project that I continuously update as I complete new projects, gain experience, and expand my cybersecurity skills.
+
+
 ## About Me
 Graduate student pursuing a Master of Science in Strategic Cybersecurity and Information Management, bringing strong analytical, problem-solving, and operational leadership skills. Experienced in supervising teams, ensuring compliance, and communicating effectively.  
 
