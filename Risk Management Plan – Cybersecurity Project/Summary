@@ -1,0 +1,19 @@
+Risk Management Plan – Cybersecurity Project
+
+I developed a comprehensive Risk Management Plan for Health Network, Inc., a fictional healthcare organization that manages sensitive medical and financial information. The project focused on identifying cybersecurity risks, evaluating their likelihood and impact, and recommending security controls to reduce those risks.
+
+I used the NIST Cybersecurity Framework and NIST SP 800-53 to structure the plan around the Govern, Identify, Protect, Detect, Respond, and Recover functions. I analyzed threats including ransomware, phishing, DDoS attacks, insider threats, data loss, zero-day exploits, unsecured mobile devices, and physical security breaches. Each risk was evaluated based on likelihood and potential business impact.
+
+The project also mapped risks to specific NIST security controls, including least privilege, multi-factor authentication, continuous monitoring, system backups, incident response, encryption, access control, security awareness training, and network boundary protection. I also incorporated compliance requirements such as HIPAA, HITECH, and PCI-DSS.
+
+Skills Demonstrated:
+
+        Cybersecurity Risk Assessment
+        NIST Cybersecurity Framework
+        NIST SP 800-53 Controls
+        Threat & Vulnerability Analysis
+        Risk Prioritization
+        Security Control Selection
+        Incident Response Planning
+        Business Continuity & Disaster Recovery
+        Compliance & Regulatory Requirements
