@@ -16,7 +16,7 @@ Graduate student pursuing a Master of Science in Strategic Cybersecurity and Inf
 
 ## Labs & Projects
 - [Cybersecurity Home Lab](https://github.com/cf000091/Cybersecurity-portfolio/tree/bbbd96f619c36b98462fadbba3a28b1096eeaa1e/Cyber%20Home%20Lab%20)
-- [Service Desk Simulator]()
+- [Service Desk Simulator](https://github.com/cf000091/Cybersecurity-portfolio/tree/eaa6b13e4b86b0d684f5ed4583f44057fdf6837a/Service%20Desk%20Simulator)
 - [Risk Management Plan Project](https://github.com/cf000091/Cybersecurity-portfolio/tree/4329e42e5597568cfa5cdb47bfbf31acd696f38c/Risk%20Management%20Plan%20%E2%80%93%20Cybersecurity%20Project)
 - Simulation: [Let 's Defend SOC Environment](
 - Simulation: [Try Hack Me - Introduction to Phishing](https://github.com/cf000091/Cybersecurity-portfolio/tree/f769281586ab60aec9aca23c79c23c24027768d6/Introduction%20to%20Phishing)
