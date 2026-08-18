@@ -9,9 +9,10 @@ Graduate student pursuing a Master of Science in Strategic Cybersecurity and Inf
 
 ## Certifications
 - CompTIA Security+
+  
 
 ## Skills
-- Tools: Wireshark, Windows, Linux, Splunk, Snort, VM
+- Tools: Wireshark, Windows, Linux, Splunk, Snort, Sysmon, AtmoicRedTeam, Powershell, Waazuh, Zeek, and VM
 
 
 ## Labs & Projects
