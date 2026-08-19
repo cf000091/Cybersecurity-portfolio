@@ -1,71 +1,52 @@
 # SOC Simulator: Introduction to Phishing
 
-## Objective
-- Monitor and analyze real-time alerts.
-- Identify and document critical events such as suspicious emails and attachments.
-- Create detailed case reports based on your observations to help your team understand the full scope of alerts and malicious activity.
 
-## Tools
-- VM (Try Hack Me Security Dashboard)
-- Splunk
-- Virus Total
-- Wireshark
-- 
+1. Project Overview
 
-## Steps
-Task 1: 
-- Looked at all 4 cases one by one.
-- Read what each alert was about
-- Checked what triggered the alert
-- Focused on anything that looked off like:
-   - weird email addresses
-   -  urgent messages
-   -  unknown attachments
-   -  suspicious links
+   This simulation allowed me to practice investigating cybersecurity alerts in a SOC-style environment. I analyzed alerts, determined whether they were true     positives or false positives, investigated the activity associated with each alert, and documented my findings.
 
-Task 2: 
-- Opened Splunk and checked logs related to the alerts
-- Searched for events tied to the user/email/IP in each case
-- Looked at patterns like:
-   -  repeated login attempts
-   - unusual access times
-   - strange email activity
-- Used Splunk results to confirm if the alert was actually suspicious or just a false positive
-- Matched what I saw in Splunk with what was shown in the dashboard
+2. Skills Demonstrated
 
-Task 3: 
-- Tried to figure out what type of issue each case was (phishing, malware, etc.)
-- Looked at what the user was being asked to do in the email/message
-- Used VirusTotal when needed to check if links/files looked bad
-- Compared the options and picked what made the most sense for each case
+      - Security alert investigation
+      - True positive vs. false positive identification
+      - Security event analysis
+      - Incident investigation
+      - Log analysis
+      - Threat detection
+      - Documentation and report writing
+      - Analytical problem-solving
+      - SOC analyst workflow
+3. Investigation Process
 
-Task 4: 
-- Wrote each alert like a short case using the 5 W’s:
-   - Who was involved (user/account affected)
-   - What happened (type of alert or activity)
-   - When it happened (from Splunk timestamps/logs)
-   - Where it happened (email, endpoint, system)
-   - Why it looked suspicious (phishing signs, unusual behavior, etc.)
-- Used Splunk and dashboard info to build out each case
-- After reviewing, I decided if each alert was:
-   - True positive (real malicious/suspicious activity)
-   - False positive (legit activity that just triggered an alert)
-- Based on that, I also decided if it needed to be:
-   - Escalated to higher-level SOC/incident response
-   - Or closed if it was not a real threat
-- Made sure my decision matched the evidence from Splunk logs and the alert detail
 
-## Results
-- Finished all 4 cases in the lab
-- Used Splunk to confirm suspicious activity in logs
-- Understood how alerts, logs, and security tools connect
-- Got better at spotting phishing and validating incidents
+   Reviewed the Alert – Examined the alert details and identified the type of security event.
+   Analyzed the Evidence – Reviewed the available information and activity associated with the alert.
+   Investigated the Activity – Looked for additional information that could help determine whether the activity was suspicious.
+   Determined the Verdict – Classified the alert as either a true positive or false positive.
+   Documented the Findings – Recorded the investigation results and reasoning behind the final determination.
 
-## Key Takeaways
-- Splunk helps confirm what alerts are actually happening behind the scenes
-- Not every alert is malicious — logs help verify
-- Security works best when combining dashboard alerts + log analysis + endpoint tools
+4. Results
 
-## Attempts
+I successfully identified the alerts and correctly classified them as either positive or false positive. The simulation gave me hands-on experience with the alert investigation process and helped me better understand how security analysts evaluate suspicious activity. I investigated 4 alerts and correctly classified 3 as true positives and 1 as false positive.
 
-1. 
+
+5. Video Demonstration
+
+   Simulation Walkthrough – Security Alert Investigation
+   
+  
+6. What I Learned
+
+   This simulation helped me improve my understanding of the alert investigation process and the importance of analyzing evidence before determining whether an    alert is legitimate. 
+
+7. Areas for Improvement
+
+   I successfully identified the alerts and correctly classified them as positives and false positives. One area I can improve on is my investigation skills, particularly when analyzing evidence and documenting my findings. I also want to improve my report writing so that my conclusions are clearer and more detailed. I plan to review my investigation process and complete the simulation again to measure my improvement.
+
+8. Tools / Technologies
+
+   - VM (Try Hack Me Security Dashboard)
+   - Splunk
+   - Virus Total
+   - Wireshark
+   - TryDetectThis
