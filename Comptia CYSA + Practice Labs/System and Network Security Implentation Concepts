@@ -1,0 +1,56 @@
+System & Network Security Implementation Concepts Lab (CompTIA CySA+)
+
+## Project Overview
+     Completed a hands-on cybersecurity lab focused on implementing core system and network security controls in a Windows enterprise environment. The lab emphasized security monitoring, data protection, and identity security through practical configuration and administration tasks. Information derived from Print content.
+
+
+## Learning Outcomes
+
+In this module, you will complete the following exercises:
+    - Exercise 1 - Log Collection with Splunk
+    - Exercise 2 - Encrypting Sensitive Data
+    - Exercise 3 - Enable Multifactor Authentication
+
+After completing these modules, you should be able to:
+
+    - Install and Configure the Splunk Enterprise Application
+    - Configure a Splunk Client
+    - Collect Logs using Splunk Enterprise
+    - Install the BitLocker Drive Encryption Feature
+    - Encrypt a Local Drive on a Server
+    - Enable Multifactor Authentication
+    - Verify Multifactor Authentication
+
+## Lab Topology
+
+    - ACIDC01 - Windows Server 2022 - Domain Controller
+    - ACIDM01 - Windows Server 2022 - Domain Member Server
+    - ACIWIN11 - Windows 11 - Domain Member Workstation
+
+## Key Accomplishments
+
+  1.  Security Monitoring and Log Management with Splunk
+
+   - Installed and configured Splunk Enterprise for centralized log collection and analysis.
+   - Deployed and configured Splunk Universal Forwarder on a Windows Server.
+   - Configured forwarding and receiving ports to enable secure log transmission.
+   - Collected and monitored Windows Event Logs, including Application, Security, and System logs.
+   - Established a centralized logging solution to improve visibility into network activity and support security investigations.
+
+  2. Data Protection with BitLocker Encryption
+
+   - Installed the BitLocker Drive Encryption feature on Windows Server 2022.
+   - Configured full-disk encryption on a local server volume.
+   - Created and secured a BitLocker recovery key.
+   - Validated successful encryption to protect sensitive data at rest and strengthen compliance with security best practices.
+
+  3. Identity and Access Management with Multi-Factor Authentication
+
+   - Created and managed Active Directory user accounts.
+   - Implemented multi-factor authentication controls by requiring smart card authentication for interactive logon.
+   - Tested and verified MFA enforcement to demonstrate protection against unauthorized account access.
+
+
+## Summary
+
+  Implemented enterprise security controls within a Windows domain environment by deploying Splunk Enterprise for centralized log management, configuring BitLocker encryption to protect sensitive data, and enabling multi-factor authentication through Active Directory. Demonstrated practical experience in SIEM deployment, security monitoring, data protection, and identity management aligned with CompTIA CySA+ objectives
