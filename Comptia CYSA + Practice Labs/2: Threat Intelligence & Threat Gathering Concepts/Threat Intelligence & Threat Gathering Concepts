@@ -1,1 +1,57 @@
+## Project Overview
 
+    - Completed a hands-on cybersecurity lab focused on threat intelligence, threat hunting, and security monitoring within a Windows enterprise environment. The lab provided practical experience gathering open-source  intelligence, identifying indicators of compromise, researching attacker techniques, analyzing Windows security events, and enabling firewall logging.
+
+## Lab Environment
+    - ACIDC01 — Windows Server 2022 Domain Controller
+    - ACIWIN11 — Windows 11 Domain Member Workstation
+
+## Key Accomplishments
+
+    1. Open Source Intelligence (OSINT) & Threat Intelligence
+    
+    Researched publicly available information to identify data that could potentially be useful to threat actors.
+    Used OSINT tools including the Wayback Machine, BuiltWith, Intelligence X, Whois, Website Informer, and Social Searcher.
+    Examined historical website information, domain information, technologies, DNS data, relationships, and publicly available information.
+    Identified how publicly exposed information can contribute to an organization's digital footprint and increase security risk.
+    
+    2. Threat Hunting & SIEM
+    
+    Reviewed threat hunting concepts and indicators of compromise (IOCs), including unusual network traffic, failed login attempts, privilege escalation, unusual DNS activity, and suspicious IP activity.
+    Researched Security Information and Event Management (SIEM) solutions and their role in identifying, analyzing, and responding to security threats.
+    Examined how centralized security monitoring can help reduce manual log analysis and support incident response.
+    
+    3. Honeypot & Threat Activity Analysis
+    
+    Used a honeypot threat map to observe real-time attack activity.
+    Reviewed CIC Honeynet attack data and bi-weekly reports.
+    Examined information about attack types, attacking countries, honeypot infrastructure, honeypot software, and attacker software.
+    Developed an understanding of how honeypots can be used to collect information about attacker behavior and techniques.
+    
+    4. MITRE ATT&CK & TTP Identification
+    
+    Used the MITRE ATT&CK Enterprise Matrix to research adversary tactics, techniques, and procedures (TTPs).
+    Investigated Reconnaissance → Active Scanning and Privilege Escalation → Abuse Elevation Control Mechanism.
+    Reviewed associated detection and mitigation information to understand how organizations can identify and respond to adversary techniques.
+    
+    5. Windows Event Log Analysis
+    
+    Used Windows Event Viewer to research and analyze Security event logs.
+    Investigated Event ID 4624 to examine authentication and logon activity.
+    Researched Event ID 4765, associated with SID History being added to an account, as a potential indicator of privilege abuse or malicious activity.
+    Reviewed event details including timestamps, accounts, and authentication information to identify potentially suspicious activity.
+    
+    6. Windows Firewall Logging
+    
+    Configured Windows Defender Firewall logging through Active Directory Group Policy.
+    Enabled logging for both dropped packets and successful connections.
+    Applied the configuration through the Default Domain Policy.
+    Established additional visibility into network activity that could support security monitoring and investigation.2
+
+## Skills & Technologies
+
+    OSINT • Threat Intelligence • Threat Hunting • SIEM • Honeypots • MITRE ATT&CK • TTP Analysis • Indicators of Compromise (IOCs) • Windows Event Viewer • Windows Security Logs • Event ID Analysis • Windows Defender Firewall • Active Directory • Group Policy • Incident Response • Security Monitoring
+
+## Summary
+
+    Completed a hands-on threat intelligence and threat hunting lab that demonstrated the process of gathering intelligence, researching attacker behavior, analyzing security events, and improving network visibility. The lab strengthened practical skills in OSINT, MITRE ATT&CK, SIEM concepts, Windows event analysis, honeypot analysis, and firewall logging.
