@@ -12,7 +12,7 @@ Graduate student pursuing a Master of Science in Strategic Cybersecurity and Inf
   
 
 ## Skills
-- Tools: Wireshark, Windows, Linux, Splunk, Snort, Sysmon, AtmoicRedTeam, Powershell, Waazuh, Zeek, AWS, and VM
+- Tools: Wireshark, Windows, Linux, Splunk, Snort, Sysmon, Atomic Red Team, Powershell, Waazuh, Zeek, AWS, and VM
 
 
 ## Labs & Projects
