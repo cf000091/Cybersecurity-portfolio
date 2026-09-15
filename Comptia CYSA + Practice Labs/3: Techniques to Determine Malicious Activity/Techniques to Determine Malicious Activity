@@ -1,1 +1,51 @@
+## Project Overview
 
+    Completed a hands-on cybersecurity lab focused on detecting and responding to malicious activity through Windows security event monitoring and Linux login monitoring. The lab provided practical experience enabling audit policies, generating and analyzing brute-force attack logs, automating log review with PowerShell, hardening accounts against brute-force attacks, and monitoring login activity on a Linux system.
+
+## Lab Environment
+
+    - ACIDC01 — Windows Server 2022 Domain Controller
+    - ACIDM01 — Windows Server 2022 Domain Member Server
+    - ACIWIN11 — Windows 11 Domain Member Workstation
+    - ACIKALI — Kali Linux (attack simulation host)
+    - ACIALMA — Alma Linux Standalone Workstation
+
+## Key Accomplishments
+
+    1. Audit Policy Configuration
+    
+    Enabled Audit Logon Events (Success and Failure) via Group Policy Management on the Default Domain Policy.
+    Applied changes through Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > Audit Policy.
+    Configured Windows Defender Firewall to allow Remote Event Monitor and Remote Event Log Management, enabling centralized/remote log review across domain member servers.
+    
+    2. Simulated Attack & Log Generation
+    
+    Used a Linux (Kali) host to run a scripted brute-force simulation against an SMB file share to generate realistic failed-logon telemetry.
+    Restarted domain systems to ensure updated Group Policy settings were correctly applied before log collection.
+    
+    3. PowerShell-Based Security Event Monitoring
+    
+    Built a custom PowerShell script in PowerShell ISE using Get-WinEvent to query a remote device's Security log for Event ID 4625 (failed logon) within a rolling time window.
+    Piped results to Out-GridView for interactive review and analysis of suspicious authentication activity.
+    Adjusted script execution policy (Set-ExecutionPolicy) and executed the script from PowerShell to validate detection of the simulated brute-force attempts.
+    
+    4. Brute-Force Attack Prevention
+    
+    Configured an Account Lockout Policy via Group Policy (Account lockout threshold) to automatically lock accounts after repeated failed logon attempts.
+    Forced policy application with gpupdate /force across domain systems.
+    Re-ran the attack simulation and Event ID 4740 (account lockout) monitoring script to confirm the account lockout policy successfully mitigated the brute-force attempt.
+    
+    5. Linux Login Monitoring
+    
+    Used last -w, last reboot, and last -w -i on an Alma Linux workstation to review login history, system reboot events, and source IP addresses of prior sessions.
+    Simulated failed and successful SSH login attempts (including intentional wrong-password attempts) and observed connection refusal after repeated failures.
+    Used last -F and who-style monitoring to confirm currently logged-in users and distinguish local vs. SSH-based sessions.
+    Noted how local log data of this kind can be aggregated into a centralized SIEM for multi-device monitoring.
+
+## Skills & Technologies
+
+    Threat Detection • Brute-Force Attack Analysis • Windows Event Log Analysis • Event ID Analysis (4624, 4625, 4740) • PowerShell Scripting • PowerShell ISE • Get-WinEvent • Group Policy Management • Active Directory • Audit Policy Configuration • Account Lockout Policy • Windows Defender Firewall • Linux Log Analysis (last, who) • SSH • Incident Detection & Response • Security Monitoring
+
+## Summary
+
+      Completed a hands-on lab covering practical techniques for detecting malicious activity across Windows and Linux environments. The lab reinforced skills in configuring audit policies, scripting automated log analysis with PowerShell, identifying brute-force attack patterns via specific Windows Event IDs, implementing account lockout controls to prevent such attacks, and monitoring Linux login activity for unauthorized access.
