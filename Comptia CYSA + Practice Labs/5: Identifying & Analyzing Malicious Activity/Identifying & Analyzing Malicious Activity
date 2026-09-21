@@ -1,1 +1,69 @@
+## Project Overview
 
+      Completed a hands-on cybersecurity lab focused on identifying and analyzing indicators of malicious activity on Windows and Linux systems. The lab provided practical experience monitoring system resource utilization, using process analysis tools to inspect running processes, and configuring Active Directory auditing to detect unauthorized privilege escalation. The exercises aligned with CompTIA CySA+ (CS0-003) Exam Objective 1.2: analyzing indicators of potentially malicious activity (network-related, host-related, and application-related).
+
+## Lab Environment
+
+      ACIDC01: Windows Server 2022 Domain Controller
+      ACIDM01: Windows Server 2022 Domain Member Server
+      ACIALMA: Alma Linux Standalone Workstation
+
+## Key Accomplishments
+      1. Monitoring Resource Utilization on a Windows Device
+      
+      Used built-in and advanced Windows tools to monitor CPU, memory, disk, and network activity and to recognize behavior that could indicate an attack.
+      
+      Reviewed CPU, memory, and Ethernet performance data in Task Manager
+      Used Resource Monitor to examine per-process activity across the CPU, Memory, Disk, and Network tabs
+      Used Sysinternals Process Explorer to view the full process tree, including detailed CPU, memory, I/O, and GPU metrics
+      Practiced terminating a process from Process Explorer, as would be done to contain a suspicious process
+      
+      This exercise showed how sudden spikes in resource use can point to malware, denial-of-service activity, or unauthorized workloads such as cryptocurrency miners. It also showed how much more detail Process Explorer provides than the native Task Manager.
+      
+      2. Monitoring Resource Utilization on a Linux Device
+      
+      Connected from a Windows server to the Alma Linux workstation over SSH and used command-line tools to investigate running processes.
+      
+      Used top to view real-time process activity and limit the number of iterations
+      Filtered processes by user account with top -u to isolate activity tied to a specific account
+      Installed the EPEL repository and the htop utility using dnf
+      Used htop and its user filter to review color-coded processes on the system
+      
+      This reinforced how filtering process output by user can help uncover unexpected or malicious applications running on a Linux host.
+      
+      3. Enabling User Privilege Monitoring
+      
+      Configured auditing in Active Directory so that changes to privileged group membership would be recorded.
+      
+      Opened Group Policy Management on the domain controller and edited the Default Domain Policy
+      Navigated to Advanced Audit Policy Configuration and enabled Audit Security Group Management for both Success and Failure events
+      Forced the policy to apply immediately with gpupdate /force
+      
+      This showed how audit policy settings determine what security-relevant activity gets logged. In a production environment, I would scope this to a dedicated Group Policy rather than the Default Domain Policy.
+      
+      4. Generating Auditing Logs
+      
+      Created activity that the new audit policy should capture.
+      
+      Created a new domain user account in the Marketing OU using Active Directory Users and Computers
+      Added the new account to the Domain Admins group, simulating an unauthorized privilege escalation
+      
+      This demonstrated how an attacker who has compromised an account might create an obscure account, grant it elevated privileges, and use it to maintain access.
+      
+      5. Detecting an Unauthorized Privilege Escalation
+      
+      Used Event Viewer on the domain controller to find and analyze the resulting security events.
+      
+      Located Event ID 4728, showing a member added to a security-enabled global group, and identified which account made the change and which account was added to Domain Admins
+      Located Event ID 4737, showing that a security-enabled group was modified
+      Reviewed the Details tab of each event to understand the data the audit policy captured
+      
+      These events indicate that the account making the changes may have been compromised, or that privileges were changed without authorization.
+
+## Skills & Technologies
+
+      Task Manager • Resource Monitor • Sysinternals Process Explorer • Linux top and htop • SSH • dnf Package Management • Active Directory Users and Computers • Group Policy Management • Advanced Audit Policy Configuration • Windows Event Viewer • Security Event Log Analysis (Event IDs 4728 and 4737) • Resource Utilization Analysis • Privilege Escalation Detection • Indicators of Compromise • Windows Server • Alma Linux • CompTIA CySA+ CS0-003
+
+## Summary
+
+      Completed a hands-on lab focused on identifying and analyzing potentially malicious activity on Windows and Linux systems. I used Task Manager, Resource Monitor, Process Explorer, top, and htop to monitor resource utilization and inspect running processes. I also configured Active Directory audit policies, simulated an unauthorized privilege escalation, and used Event Viewer to detect it through Event IDs 4728 and 4737. The lab reinforced the importance of baselining normal system behavior, enabling the right audit policies before an incident occurs, and reviewing security logs to spot signs of account compromise.
