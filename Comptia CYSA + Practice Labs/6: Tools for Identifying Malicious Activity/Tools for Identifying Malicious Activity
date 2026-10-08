@@ -1,1 +1,89 @@
 
+## Project Overview
+
+  Completed a hands-on cybersecurity lab focused on using security tools and threat intelligence resources to identify malicious activity. The lab provided practical experience capturing and analyzing network traffic, investigating suspicious files within a secure sandbox environment, and validating domains, IP addresses, and URLs using industry-standard threat intelligence platforms. The exercises aligned with CompTIA CySA+ (CS0-003) Exam Objective 1.3: using appropriate tools and techniques to determine malicious activity.
+
+## Lab Environment
+    ACIDC01: Windows Server 2022 Domain Controller
+    ACIDM01: Windows Server 2022 Domain Member Server
+    ACIWIN11: Windows 11 Domain Member Workstation
+    ACIALMA: Alma Linux Standalone Workstation
+    ACIKALI: Kali Linux Standalone Workstation
+## Key Accomplishments
+    1. Monitoring Network Activity
+    
+    Used network analysis tools to capture, filter, and inspect traffic in order to identify potentially malicious communications and understand normal network behavior.
+        
+        Customized the Wireshark interface by creating additional columns for destination addresses and destination ports
+        Modified packet display settings and timestamps to improve analysis efficiency
+        Captured live network traffic using Wireshark on an Alma Linux system
+        Applied filters to isolate HTTP traffic and specific IP address ranges
+        Analyzed packet details including source and destination information, protocols, and TCP communication
+        Sorted captured traffic by protocol and source address to identify communication patterns
+        
+        This exercise demonstrated how packet capture and protocol analysis can help security analysts identify unauthorized communications, suspicious traffic patterns, and indicators of compromise within a network. Wireshark's filtering capabilities make it possible to quickly isolate traffic relevant to an investigation.
+    
+    2. Capturing Network Traffic Using Tcpdump
+    
+        Used command-line packet capture tools to monitor network activity and save traffic for later analysis.
+        
+        Identified available network interfaces using tcpdump
+        Generated ICMP traffic by initiating ping requests from a Windows workstation
+        Captured ICMP packets using tcpdump and exported the results to a packet capture (.pcap) file
+        Opened and analyzed captured packet data in Wireshark
+        Captured HTTP traffic targeting TCP port 80
+        Practiced starting and stopping packet captures using command-line tools
+        
+        This exercise reinforced how tcpdump can be used in Linux environments to collect evidence during security investigations, support threat hunting activities, and gather network data when graphical tools are unavailable. Captured traffic can be preserved for forensic analysis and incident response efforts.
+    
+    3. Using a Sandbox for Analyzing Malicious Files
+    
+        Investigated suspicious files in an isolated environment to safely observe potentially malicious behavior.
+        
+        Opened Windows Sandbox on a Windows 11 workstation
+        Copied a suspicious file into the sandbox environment
+        Executed the file in the isolated sandbox
+        Observed the file's behavior and resulting system impact
+        Verified that any changes made within the sandbox were discarded after restarting the environment
+        
+        This exercise demonstrated the importance of sandboxing when analyzing unknown files. By executing suspicious code in an isolated environment, analysts can safely observe behavior without risking damage to production systems or organizational assets.
+    
+    4. Validating Domain Names and IP Addresses
+    
+        Used open-source intelligence (OSINT) and threat intelligence resources to investigate network indicators.
+        
+        WHOIS Investigation
+        Used Whois.com to investigate IP address 13.107.42.14
+        Resolved the IP address and identified ownership information
+        Verified that the address belonged to Microsoft
+        Investigated the domain www.acilearning.com and reviewed hosting and registration details
+        
+        This demonstrated how WHOIS records can help analysts identify domain ownership, hosting providers, and infrastructure details associated with suspicious activity.
+        
+        AbuseIPDB Investigation
+        Used AbuseIPDB to investigate the domain comptia.org
+        Reviewed abuse reports and reputation data associated with the resolved IP address
+        Examined WHOIS information linked to the resolved address
+        Verified whether indicators had been previously reported for malicious activity
+        
+        This exercise highlighted the value of reputation-based threat intelligence sources for validating whether IP addresses or domains have been associated with abuse or malicious behavior.
+        
+    5. Investigating Indicators with VirusTotal
+    
+        Used VirusTotal to determine whether IP addresses and URLs had been flagged by security vendors.
+        
+        Investigated suspicious IP address 196.242.35.45
+        Reviewed detection results and threat intelligence provided by multiple security vendors
+        Investigated the URL www.practice-labs.com using VirusTotal
+        Examined URL reputation information and detailed analysis reports
+        Reviewed indicators reported by participating security engines
+        
+        This exercise demonstrated how VirusTotal can be used to quickly validate indicators of compromise and determine whether domains, URLs, or IP addresses have been identified as malicious by the security community.
+
+## Skills & Technologies
+
+    Wireshark • Packet Capture Analysis • Network Traffic Monitoring • Display Filters • TCP/IP Protocol Analysis • Tcpdump • PCAP Analysis • Windows Sandbox • Malware Analysis • Threat Intelligence • WHOIS • AbuseIPDB • VirusTotal • IP Reputation Analysis • Domain Validation • URL Analysis • Open-Source Intelligence (OSINT) • Network Security Monitoring • Incident Investigation • Security Analysis • CompTIA CySA+ CS0-003
+
+## Summary
+
+    Completed a hands-on lab focused on identifying malicious activity through network monitoring, malware analysis, and threat intelligence validation. I used Wireshark and tcpdump to capture and analyze network traffic, leveraged Windows Sandbox to safely execute and observe a suspicious file, and utilized WHOIS, AbuseIPDB, and VirusTotal to investigate domains, IP addresses, and URLs. The lab reinforced the importance of packet analysis, secure malware testing, and threat intelligence correlation when identifying indicators of compromise and investigating potentially malicious activity.
